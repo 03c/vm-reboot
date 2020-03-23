@@ -3,6 +3,7 @@
 Simple bash script to reboot a VM Super Hub 3.0
 
 ## Usage
+Normally the username will be 'admin', but you can substitute if required.
 ```
 ./reboot.sh -i IP -u admin -p PASSWORD
 ```
