@@ -46,9 +46,7 @@ main(){
     token=$(curl -v --insecure "$loginUrl")
 
     # Reboot
-    rebootRequestUrl="https://$ip//snmpSet?oid=1.3.6.1.4.1.4115.1.20.1.1.5.15.0;&_n=$nonce"
     rebootConfirmUrl="https://$ip//snmpSet?oid=1.3.6.1.2.1.69.1.1.3.0=2;2;&_n=$nonce"
-    curl -v --insecure --header "Cookie: credential=$token" "$rebootRequestUrl"
     curl -v --insecure --header "Cookie: credential=$token" "$rebootConfirmUrl"
 
     # ensure we are logged out again
