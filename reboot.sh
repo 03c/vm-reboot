@@ -5,11 +5,14 @@
 ########################################
 usage()
 {
-    echo "VM Router Reboot Usage"
-    echo "---------------------------------------"
-    echo "Usage: $0 -i IP -u USERNAME -p PASSWORD"
-    echo ""
-    exit 2
+    echo -e "VM Router Reboot Usage"
+    echo -e "---------------------------------------"
+    echo -e "Usage: $0 -i IP -u USERNAME -p PASSWORD"
+    echo -e "IP - IP address of your VM router."
+    echo -e "USERNAME - Username of your VM router."
+    echo -e "PASSWORD - Password of your VM router."
+    echo -e ""
+    exit -e 2
 }
 
 ########################################
